@@ -7,10 +7,13 @@ export default function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:3003/register", {
-      email,
-      password,
-    });
+    const res = await axios.post(
+      "https://bookingapi-u3iy.onrender.com/register",
+      {
+        email,
+        password,
+      }
+    );
     console.log(res);
   };
   return (

@@ -8,7 +8,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     const res = await axios.post(
-      "http://localhost:3003/login",
+      "https://bookingapi-u3iy.onrender.com/login",
       {
         email,
         password,
